@@ -107,3 +107,134 @@ You can select only one card from either end. Both end cards have 1 point.
 - `1 <= nums.length <= 10^5`
 - `1 <= nums[i] <= 10^4`
 - `1 <= k <= nums.length`
+-----------------------------------------------------------------------------------------------------------
+2.# Longest Mountain in Array
+
+## Problem Link
+https://leetcode.com/problems/longest-mountain-in-array/
+
+---
+
+## Problem Statement
+
+You are given an integer array `nums` of length `n`.
+
+A mountain array is an array that satisfies the following conditions:
+
+- It contains at least 3 elements.
+- There exists a peak element that is neither the first nor the last element.
+- Elements strictly increase before the peak.
+- Elements strictly decrease after the peak.
+
+In other words:
+
+`nums[0] < nums[1] < ... < nums[peak] > ... > nums[n-1]`
+
+Return the length of the longest mountain subarray.
+
+If there is no mountain in the given array, return `0`.
+
+---
+
+## Input Format
+
+- An integer array `nums` representing the given elements.
+
+## Output Format
+
+- Return an integer representing the length of the longest mountain subarray.
+
+---
+
+## Sample Test Cases
+
+### Example 1
+
+**Input:**
+```text
+nums = [2, 1, 4, 7, 3, 2, 5]
+```
+
+**Output:**
+```text
+5
+```
+
+**Explanation:**
+
+The longest mountain subarray is `[1, 4, 7, 3, 2]`.
+
+Length = 5.
+
+### Example 2
+
+**Input:**
+```text
+nums = [1, 3, 2]
+```
+
+**Output:**
+```text
+3
+```
+
+**Explanation:**
+
+The entire array forms a mountain.
+
+### Example 3
+
+**Input:**
+```text
+nums = [5, 4, 3, 2, 1]
+```
+
+**Output:**
+```text
+0
+```
+
+**Explanation:**
+
+There is no increasing sequence followed by a decreasing sequence.
+
+### Example 4
+
+**Input:**
+```text
+nums = [1, 2, 3, 4, 5]
+```
+
+**Output:**
+```text
+0
+```
+
+**Explanation:**
+
+The array contains only an increasing sequence and does not have a decreasing sequence after a peak.
+
+### Example 5
+
+**Input:**
+```text
+nums = [1, 3, 2, 4, 5, 3, 2]
+```
+
+**Output:**
+```text
+5
+```
+
+**Explanation:**
+
+The longest mountain subarray is `[2, 4, 5, 3, 2]`.
+
+Length = 5.
+
+---
+
+## Constraints
+
+- `3 <= nums.length <= 10^4`
+- `0 <= nums[i] <= 10^4`
