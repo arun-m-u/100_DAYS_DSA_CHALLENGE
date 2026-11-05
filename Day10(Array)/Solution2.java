@@ -32,3 +32,6 @@ class Solution2{
         System.out.print(len);
     }
 }
+/*
+learning test case : 1,2,1,3,3,5,6,4,3
+ */
